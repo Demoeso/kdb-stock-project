@@ -1,6 +1,10 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 import requests
 
-API_KEY = "YOUR_API_KEY" 
+API_KEY = os.getenv("ALPHA_VANTAGE_KEY") 
 symbol = "AAPL"
 url = "https://www.alphavantage.co/query"
 
